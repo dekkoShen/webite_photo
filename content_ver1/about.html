@@ -1,0 +1,35 @@
+<div id="content" class="content_about">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#content.content_about').css('padding','6rem 10% 6rem 8%');
+			$('#content.content_about .table_c').css('vertical-align','middle');
+			$('#content.content_about .table_c.img').css('padding-right','4rem');
+			$('#content.content_about .table_c.text').css('min-width','15rem');
+
+			$('#content.content_about p.selfIntro').css('margin-bottom','0.5rem');
+
+			/* setup portrait animate */
+			var random;			
+			var preRandom = 1;
+			var timeTrans;
+			for(var i=1; i<1000; i++){
+                random = Math.pow(Math.random(),0.301);
+				timeTrans = Math.abs(random-preRandom)*7000;
+				$('.img_changeCover').animate({opacity:random},timeTrans);
+				preRandom = random;
+			};
+		});
+	</script>
+
+	<div class="table_holder">
+		<div class="table_c img">
+			<img class="img_changeCover" src="https://lh6.googleusercontent.com/-d3zuH9rbIsU/VKL64j-v5LI/AAAAAAAAT-o/2t2Yylqc6S8/w336-h500-no/about_self.jpg" alt="untitled" style="height:31.25rem;border:0" /><img src="https://lh6.googleusercontent.com/-kPbtkY2t02E/VKkyHuiGBwI/AAAAAAAAUPU/FCWIGYT9CTo/w336-h500-no/about_self_invert.jpg" alt="untitled" style="height:31.25rem;border:0" />
+		</div>
+		<div class="table_c text">
+			<p class="selfIntro">沈維昭 / 網路代號:dekko / 12月出生 / 生活在台灣北部 / 物理系畢業 / 無特殊事蹟 / 拍照 聽音樂 / 從甲地走到乙地 / 可以很晚睡 / 也想要早起 / 開始覺得寫網頁很有趣 / 呃...</p>
+		</div>				
+	</div>
+	
+</div>
