@@ -9,10 +9,10 @@ Version: 1.0_201412
 /******************  initial setup  ******************/
 @font-face {
 	font-family:"Essays 1743";
-	src: url(https://dl.dropboxusercontent.com/u/14624624/website_tools/fonts/Essays1743.eot);
-	src: url(https://dl.dropboxusercontent.com/u/14624624/website_tools/fonts/Essays1743.eot?#iefix) format('embedded-opentype'),
-	     url(https://dl.dropboxusercontent.com/u/14624624/website_tools/fonts/Essays1743.woff) format('woff'),
-	     url(https://dl.dropboxusercontent.com/u/14624624/website_tools/fonts/Essays1743.ttf) format('truetype');
+	src: url(./fonts/Essays1743.eot);
+	src: url(./fonts/Essays1743.eot?#iefix) format('embedded-opentype'),
+	     url(./fonts/Essays1743.woff) format('woff'),
+	     url(./fonts/Essays1743.ttf) format('truetype');
 }
 
 
