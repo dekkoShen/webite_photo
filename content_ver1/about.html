@@ -15,7 +15,7 @@
 			var preRandom = 1;
 			var timeTrans;
 			for(var i=1; i<1000; i++){
-                random = Math.pow(Math.random(),0.301);
+				random = Math.pow(Math.random(),0.301);
 				timeTrans = Math.abs(random-preRandom)*7000;
 				$('.img_changeCover').animate({opacity:random},timeTrans);
 				preRandom = random;
