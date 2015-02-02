@@ -46,7 +46,7 @@ $(document).ready(function(){
 	linkContent( '#link_content_work_2x2_2015', "work_2x2_2015" );
 	linkContent( '#link_content_about', "about" );
 	linkContent( '#link_content_contact', "contact" );
-	linkContent( '#link_content_message', "message" );
+	linkContent( '#link_content_guestbook', "guestbook" );
 
 
 	/* preload images */
