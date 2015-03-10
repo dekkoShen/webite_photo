@@ -26,20 +26,20 @@ $(document).ready(function(){
 
 	/* setup content-linking function */
 	var linkContent = function( linkID, fileName ){
-		var filePosition = "./" + folderName + "/"+ fileName + ".html"
+		var filePosition = "./" + folderName + "/"+ fileName + ".html";
 		$(linkID).click(function(){
 			if( addr != fileName) {
 				$('#content').load(filePosition, function() {
 					$(this).children(':first').unwrap();
 				});
 				addr = fileName;
-			};
+			}
 			//scroll back to origin
 			$('html, body').animate({scrollLeft:0},400);
 			$('html, body').animate({scrollTop: 0},400);
 //			$('html, body').stop();    //!!!!!!!!!PROBLEM for tab
 		});
-	};
+	}
 
 	/* content-linking */
 	linkContent( '#link_content_homeCover, #link_content_homeCoverName', "homeCover" );
@@ -52,8 +52,8 @@ $(document).ready(function(){
 	$.preloadImages = function() {
 		for (var i = 0; i < arguments.length; i++) {
 			$("<img />").attr("src", arguments[i]);
-		};
-	};
+		}
+	}
 	//preload_content_about
 	$.preloadImages(
         "https://lh6.googleusercontent.com/-d3zuH9rbIsU/VKL64j-v5LI/AAAAAAAAT-o/2t2Yylqc6S8/w336-h500-no/about_self.jpg",

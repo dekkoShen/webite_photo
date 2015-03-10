@@ -22,7 +22,7 @@
 				setTimeout(function(){            
 					checkAnimateProcess = false;
 				}, animateTime);				
-			};
+			}
 
 			/* initial cover-style: collapse-mode */
 			$('.content_work_2x2_2015 .img_container').css({
@@ -61,7 +61,7 @@
 					$divPicHolder.siblings('.tempActive').next().addClass("active");
 					$divPicHolder.siblings('.tempActive').removeClass("tempActive");
 					noInterruptTime( timeFlip );
-				};
+				}
 			});
 
 			$divButton.siblings('.buttonPrev').click(function(){
@@ -79,7 +79,7 @@
 					$divPicHolder.siblings('.tempActive').prev().addClass("active");
 					$divPicHolder.siblings('.tempActive').removeClass("tempActive");
 					noInterruptTime( timeFlip );
-				};
+				}
 			});
 
 			$divButton.siblings('.buttonExpand').click(function(){
@@ -102,7 +102,7 @@
 					});	
 					checkExpandMode = true;
 					noInterruptTime( timeContent+timeMargin+100 );
-				};
+				}
 			});
 
 
@@ -121,7 +121,7 @@
 						$divButton.siblings('.buttonSeparate').fadeIn(timeFlip/2);
 					});
 					noInterruptTime( timeFlip+100 );
-				};
+				}
 			});
 
 			$divButton.siblings('.buttonSeparate').click(function(){
@@ -136,14 +136,15 @@
 						$divButton.siblings('.buttonAdjoin').fadeIn(timeFlip/2);
 					});
 					noInterruptTime( timeFlip+100 );
-				};
+				}
 			});
 
 			$divButton.siblings('.buttonCollapse').click(function(){
 				if ( !checkAnimateProcess ) {
 					var timeContent = 1.5*timeFlip;
 					var timeMargin  = 1.0*timeFlip;
-					if ( +$divPicHolder.css('margin-right').substring(0,1) === 0 ) { timeMargin=0 };
+					if ( +$divPicHolder.css('margin-right').substring(0,1) === 0 ) 
+						timeMargin=0;
 					//animation setup
 					$divPicHolder.animate({marginRight:'0rem'},{duration:timeMargin,queue:false});
 					setTimeout(function(){
@@ -162,7 +163,7 @@
 					$divPicHolder.first().siblings().removeClass("active");
 					checkExpandMode = false;
 					noInterruptTime( timeContent+timeMargin+100 );
-				};
+				}
 			});
 
 			/* double click for expand image */
@@ -172,7 +173,7 @@
 					$(this).css('cursor', 'pointer');
 				} else{
 					$(this).css('cursor', 'default');
-				};
+				}
 			});
 			$divPicHolder.dblclick(function(){
 				if ( !checkAnimateProcess && !checkExpandMode) {
@@ -185,8 +186,8 @@
 						$(this).siblings().removeClass("active");
 						$(this).css('cursor', 'default');
 						noInterruptTime( timeFlip );						
-					};
-				};
+					}
+				}
 			});
 
 		});
